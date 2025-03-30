@@ -39,6 +39,7 @@ class FileManager(QMainWindow):
         """Обработка клика по файлу/папке"""
         file_path = self.model.filePath(index)
         self.status_label.setText(f"Выбрано: {file_path}")
+        print(f"Переход на {file_path}")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
